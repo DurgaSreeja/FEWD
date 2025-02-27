@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center">Feedback Form</h2>
+
+    <form>
+        <!-- Name input -->
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <!-- Email input -->
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <!-- Feedback type radio buttons -->
+        <div class="form-group">
+            <label>Type of Feedback</label>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="positive" name="feedbackType" value="positive" required>
+                <label class="form-check-label" for="positive">Positive</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="negative" name="feedbackType" value="negative" required>
+                <label class="form-check-label" for="negative">Negative</label>
+            </div>
+        </div>
+
+        <!-- Feedback message textarea -->
+        <div class="form-group">
+            <label for="message">Your Feedback</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Enter your feedback here" required></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block">Submit Feedback</button>
+    </form>
+</div>
+
+<!-- Link to Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
